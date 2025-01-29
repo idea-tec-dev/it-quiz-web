@@ -5,9 +5,11 @@ author: alex
 categories: [Educación, ICFES]
 tags: [lectura-crítica, estrategias-de-estudio]
 image: assets/images/critical-reading.jpg
-description: "Si te preguntabas qué es la lectura crítica para mejorar tu preparación para la prueba Icfes, en este artículo podrás encontrar respuesta a tu pregunta."
+description: "La lectura crítica para mejorar tu preparación para la prueba Icfes"
 featured: true
 ---
+
+Si te preguntabas qué es la lectura crítica para mejorar tu preparación para la prueba Icfes, en este artículo podrás encontrar respuesta a tu pregunta.
 
 La lectura crítica es un proceso intelectual que implica analizar, evaluar y comprender un texto de manera reflexiva y cuidadosa. Se trata de una habilidad fundamental en la educación y la vida cotidiana, ya que permite a las personas no solo entender la información que se les presenta, sino también cuestionarla, evaluarla y formar sus propias opiniones de manera informada. Aquí tienes una explicación más detallada de los aspectos clave de la lectura crítica:
 
