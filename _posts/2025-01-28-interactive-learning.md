@@ -7,7 +7,6 @@ tags: [cuestionarios, aprendizaje, desarrollo-personal]
 image: assets/images/12.jpg
 description: "Explora cómo los cuestionarios pueden transformar tu experiencia de aprendizaje, haciéndola más divertida, efectiva y motivadora."
 featured: true
-rating: 4.5
 ---
 
 ## El Viaje del Aprendizaje: Más Allá de la Memorización

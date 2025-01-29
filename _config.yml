@@ -13,7 +13,7 @@ permalink: /:title/
 
 # Authors
 authors:
-  sal:
+  alex:
     name: Alexander Rugeles
     display_name: Alex
     avatar: "assets/images/alex.png"
