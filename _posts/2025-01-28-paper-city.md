@@ -40,75 +40,71 @@ Mis ciudades son un álbum de papel. Frágiles. Infinitas.
 
 ## Quiz: Tu Ciudad Interior
 
-<div id="city-quiz" class="quiz-container container">
-    <div class="row">
-        <div class="col-12">
-            <h3 class="mb-4">Descubre tu geografía emocional</h3>
-            
-            <div class="quiz-question mb-4" id="question1">
-                <p class="font-weight-bold">1. Cuando piensas en tu ciudad, ¿qué es lo primero que te viene a la mente?</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1-sounds" value="sounds">
-                    <label class="form-check-label" for="q1-sounds">Los sonidos</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1-lights" value="lights">
-                    <label class="form-check-label" for="q1-lights">Las luces</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1-people" value="people">
-                    <label class="form-check-label" for="q1-people">Las personas</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q1" id="q1-memories" value="memories">
-                    <label class="form-check-label" for="q1-memories">Los recuerdos</label>
-                </div>
-            </div>
-
-            <div class="quiz-question mb-4" id="question2">
-                <p class="font-weight-bold">2. Un lugar en tu ciudad que te transporta inmediatamente a otro tiempo...</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2-park" value="park">
-                    <label class="form-check-label" for="q2-park">Un parque</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2-cafe" value="cafe">
-                    <label class="form-check-label" for="q2-cafe">Una cafetería</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2-street" value="street">
-                    <label class="form-check-label" for="q2-street">Una calle específica</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q2" id="q2-building" value="building">
-                    <label class="form-check-label" for="q2-building">Un edificio antiguo</label>
-                </div>
-            </div>
-
-            <div class="quiz-question mb-4" id="question3">
-                <p class="font-weight-bold">3. La ciudad para ti es más como...</p>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" id="q3-book" value="book">
-                    <label class="form-check-label" for="q3-book">Un libro abierto</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" id="q3-map" value="map">
-                    <label class="form-check-label" for="q3-map">Un mapa</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" id="q3-painting" value="painting">
-                    <label class="form-check-label" for="q3-painting">Una pintura</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="q3" id="q3-music" value="music">
-                    <label class="form-check-label" for="q3-music">Una melodía</label>
-                </div>
-            </div>
-
-            <button onclick="checkQuiz()" class="btn btn-primary mb-3">Enviar Respuestas</button>
-            <div id="quiz-result" class="alert alert-info mt-3" style="display:none;"></div>
+<div id="city-quiz">
+    <h3 class="mb-4">Descubre tu geografía emocional</h3>
+    
+    <div class="quiz-question mb-4" id="question1">
+        <p class="font-weight-bold">1. Cuando piensas en tu ciudad, ¿qué es lo primero que te viene a la mente?</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-sounds" value="sounds">
+            <label class="form-check-label" for="q1-sounds">Los sonidos</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-lights" value="lights">
+            <label class="form-check-label" for="q1-lights">Las luces</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-people" value="people">
+            <label class="form-check-label" for="q1-people">Las personas</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" id="q1-memories" value="memories">
+            <label class="form-check-label" for="q1-memories">Los recuerdos</label>
         </div>
     </div>
+
+    <div class="quiz-question mb-4" id="question2">
+        <p class="font-weight-bold">2. Un lugar en tu ciudad que te transporta inmediatamente a otro tiempo...</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2-park" value="park">
+            <label class="form-check-label" for="q2-park">Un parque</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2-cafe" value="cafe">
+            <label class="form-check-label" for="q2-cafe">Una cafetería</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2-street" value="street">
+            <label class="form-check-label" for="q2-street">Una calle específica</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" id="q2-building" value="building">
+            <label class="form-check-label" for="q2-building">Un edificio antiguo</label>
+        </div>
+    </div>
+
+    <div class="quiz-question mb-4" id="question3">
+        <p class="font-weight-bold">3. La ciudad para ti es más como...</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" id="q3-book" value="book">
+            <label class="form-check-label" for="q3-book">Un libro abierto</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" id="q3-map" value="map">
+            <label class="form-check-label" for="q3-map">Un mapa</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" id="q3-painting" value="painting">
+            <label class="form-check-label" for="q3-painting">Una pintura</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" id="q3-music" value="music">
+            <label class="form-check-label" for="q3-music">Una melodía</label>
+        </div>
+    </div>
+
+    <button onclick="checkQuiz()" class="btn btn-primary mb-3">Enviar Respuestas</button>
+    <div id="quiz-result" class="alert alert-info mt-3" style="display:none;"></div>
 
 </div>
 
