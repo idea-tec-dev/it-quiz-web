@@ -1,13 +1,13 @@
 # Site
 name: "iT-Quiz"
 title: "iT-Quiz"
-description: "Jekyll template, Medium styled, free for bloggers."
+description: "idea-tec Educación, tu academía para tu vida"
 logo: "assets/images/logo.png"
 favicon: "assets/images/logo.png"
 baseurl: /
 google_analytics: "G-M41PZEGK54"
-disqus: "demowebsite"
-mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
+disqus: "ideatecquiz"
+mailchimp-list: "https://ideateceducacion.us20.list-manage.com/subscribe/post?u=6707c7923c9f952e7f333d127&amp;id=dfccfd248b&amp;f_id=000e17eff0"
 include: ["_pages"]
 permalink: /:title/
 
@@ -16,20 +16,12 @@ authors:
   sal:
     name: Alexander Rugeles
     display_name: Alex
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
-  john:
-    name: John
-    display_name: John
-    avatar: "assets/images/avatar.png"
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+    avatar: "assets/images/alex.png"
+    #gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    #email: wowthemesnet@gmail.com
+    web: https://ideateceducacion.com/
+    twitter: https://twitter.com/Alex_rugeles
+    description: "Hola, soy Alexánder Rugeles filósofo amante de la lectura, la optimización académica y personal."
 
 # Plugins
 plugins:
