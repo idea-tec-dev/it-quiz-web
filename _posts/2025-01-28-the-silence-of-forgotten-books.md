@@ -4,7 +4,7 @@ title: "El Silencio de los Libros Olvidados"
 author: alex
 categories: [Reflexión, Literatura]
 tags: [libros, memoria, nostalgia]
-image: assets/images/13.png
+image: assets/images/13.jpg
 description: "Un viaje íntimo a través de los recovecos de una biblioteca, donde cada libro cuenta una historia más allá de sus páginas."
 rating: 4.5
 ---
