@@ -35,6 +35,8 @@ La lectura crítica no se trata solo de consumir información, sino también de 
 
 Finalmente, la lectura crítica también implica la capacidad de comunicar de manera efectiva las ideas y las conclusiones obtenidas. Esto puede manifestarse en discusiones, ensayos, informes u otras formas de expresión escrita o verbal.
 
+### Quiz
+
 <div id="critical-reading-quiz" class="quiz-container">
     <div class="quiz-question mb-4" id="question1">
         <p class="font-weight-bold">1. ¿Qué implica la lectura crítica?</p>
