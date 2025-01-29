@@ -6,7 +6,6 @@ categories: [Reflexión, Viajes]
 tags: [ciudades, memoria, nostalgia]
 image: assets/images/4.jpg
 description: "Un viaje a través de las ciudades que habitamos en nuestra memoria, más allá de los mapas y las fronteras físicas."
-featured: true
 ---
 
 ## Los Mapas Invisibles
