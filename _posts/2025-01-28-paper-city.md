@@ -40,34 +40,75 @@ Mis ciudades son un álbum de papel. Frágiles. Infinitas.
 
 ## Quiz: Tu Ciudad Interior
 
-<div id="city-quiz" class="quiz-container">
-    <h3>Descubre tu geografía emocional</h3>
-    <div class="quiz-question" id="question1">
-        <p>1. Cuando piensas en tu ciudad, ¿qué es lo primero que te viene a la mente?</p>
-        <input type="radio" name="q1" value="sounds"> Los sonidos
-        <input type="radio" name="q1" value="lights"> Las luces
-        <input type="radio" name="q1" value="people"> Las personas
-        <input type="radio" name="q1" value="memories"> Los recuerdos
-    </div>
+<div id="city-quiz" class="quiz-container container">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="mb-4">Descubre tu geografía emocional</h3>
+            
+            <div class="quiz-question mb-4" id="question1">
+                <p class="font-weight-bold">1. Cuando piensas en tu ciudad, ¿qué es lo primero que te viene a la mente?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1-sounds" value="sounds">
+                    <label class="form-check-label" for="q1-sounds">Los sonidos</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1-lights" value="lights">
+                    <label class="form-check-label" for="q1-lights">Las luces</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1-people" value="people">
+                    <label class="form-check-label" for="q1-people">Las personas</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" id="q1-memories" value="memories">
+                    <label class="form-check-label" for="q1-memories">Los recuerdos</label>
+                </div>
+            </div>
 
-    <div class="quiz-question" id="question2">
-        <p>2. Un lugar en tu ciudad que te transporta inmediatamente a otro tiempo...</p>
-        <input type="radio" name="q2" value="park"> Un parque
-        <input type="radio" name="q2" value="cafe"> Una cafetería
-        <input type="radio" name="q2" value="street"> Una calle específica
-        <input type="radio" name="q2" value="building"> Un edificio antiguo
-    </div>
+            <div class="quiz-question mb-4" id="question2">
+                <p class="font-weight-bold">2. Un lugar en tu ciudad que te transporta inmediatamente a otro tiempo...</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2-park" value="park">
+                    <label class="form-check-label" for="q2-park">Un parque</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2-cafe" value="cafe">
+                    <label class="form-check-label" for="q2-cafe">Una cafetería</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2-street" value="street">
+                    <label class="form-check-label" for="q2-street">Una calle específica</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" id="q2-building" value="building">
+                    <label class="form-check-label" for="q2-building">Un edificio antiguo</label>
+                </div>
+            </div>
 
-    <div class="quiz-question" id="question3">
-        <p>3. La ciudad para ti es más como...</p>
-        <input type="radio" name="q3" value="book"> Un libro abierto
-        <input type="radio" name="q3" value="map"> Un mapa
-        <input type="radio" name="q3" value="painting"> Una pintura
-        <input type="radio" name="q3" value="music"> Una melodía
-    </div>
+            <div class="quiz-question mb-4" id="question3">
+                <p class="font-weight-bold">3. La ciudad para ti es más como...</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3-book" value="book">
+                    <label class="form-check-label" for="q3-book">Un libro abierto</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3-map" value="map">
+                    <label class="form-check-label" for="q3-map">Un mapa</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3-painting" value="painting">
+                    <label class="form-check-label" for="q3-painting">Una pintura</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" id="q3-music" value="music">
+                    <label class="form-check-label" for="q3-music">Una melodía</label>
+                </div>
+            </div>
 
-    <button onclick="checkQuiz()">Enviar Respuestas</button>
-    <div id="quiz-result" class="result-container"></div>
+            <button onclick="checkQuiz()" class="btn btn-primary mb-3">Enviar Respuestas</button>
+            <div id="quiz-result" class="alert alert-info mt-3" style="display:none;"></div>
+        </div>
+    </div>
 
 </div>
 
@@ -94,36 +135,18 @@ function checkQuiz() {
     const resultDiv = document.getElementById('quiz-result');
 
     if (q1 && q2 && q3) {
-        const result1 = results[q1.value];
-        const result2 = results[q2.value];
-        const result3 = results[q3.value];
-        
         resultDiv.innerHTML = `
             <h4>Tu Ciudad Interior</h4>
-            <p>${result1}</p>
-            <p>${result2}</p>
-            <p>${result3}</p>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-map-marker-alt mr-2"></i>${results[q1.value]}</li>
+                <li><i class="fas fa-compass mr-2"></i>${results[q2.value]}</li>
+                <li><i class="fas fa-city mr-2"></i>${results[q3.value]}</li>
+            </ul>
         `;
+        resultDiv.style.display = 'block';
     } else {
         resultDiv.innerHTML = "Por favor, responde todas las preguntas.";
+        resultDiv.style.display = 'block';
     }
 }
 </script>
-
-<style>
-.quiz-container {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
-}
-.quiz-question {
-    margin-bottom: 20px;
-}
-.result-container {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-}
-</style>
