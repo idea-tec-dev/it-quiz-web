@@ -6,7 +6,6 @@ categories: [Reflexión, Literatura]
 tags: [libros, memoria, nostalgia]
 image: assets/images/13.jpg
 description: "Un viaje íntimo a través de los recovecos de una biblioteca, donde cada libro cuenta una historia más allá de sus páginas."
-rating: 4.5
 ---
 
 ## Prólogo del Olvido
